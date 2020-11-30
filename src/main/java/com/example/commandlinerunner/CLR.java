@@ -17,7 +17,9 @@ public class CLR implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
+		System.out.println("--------------------------");
 		System.out.println("commandlinerunner running!");
+		System.out.println("--------------------------");
 		logger.info("INFO Java 8 - Spring Native 0.8.3 image");
 		logger.info("INFO Test date - " + LocalDateTime.now());
 		logger.trace("WARNING log message");
@@ -25,6 +27,7 @@ public class CLR implements CommandLineRunner {
 		logger.info("INFO log message");
 		logger.warn("WARNING log message");
 		logger.error("ERROR log message");
+		System.out.println("--------------------------");
 	}
 	
 }
