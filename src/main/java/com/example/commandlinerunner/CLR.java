@@ -20,13 +20,15 @@ public class CLR implements CommandLineRunner {
 		System.out.println("--------------------------");
 		System.out.println("commandlinerunner running!");
 		System.out.println("--------------------------");
-		logger.info("INFO Java 8 - Spring Native 0.8.3 image");
+		logger.info("INFO Java 8 - Spring Native 0.8.5 image");
 		logger.info("INFO Test date - " + LocalDateTime.now());
+		logger.info("LOG test messages...-------------");
 		logger.trace("WARNING log message");
 		logger.debug("DEBUG log message");
 		logger.info("INFO log message");
 		logger.warn("WARNING log message");
 		logger.error("ERROR log message");
+		logger.info("End LOG test messages...---------");
 		System.out.println("--------------------------");
 	}
 	
