@@ -1,7 +1,24 @@
 Very basic Spring Boot project using a `CommandLineRunner` bean.
 
-To build and run the native application packaged in a lightweight container:
+To build the native application packaged in a lightweight container:
 ```
-mvn spring-boot:build-image
-docker-compose up
+# JVM app image
+./mvnw clean package
+
+# Native executable
+./mvwn clean package -Pnative
+
+# JVM image
+./mvnw spring-boot:build-image
+
+# Native image
+./mvnw spring-boot:build-image -Pnative
 ```
+
+To run the image:
+```shell
+time java -jar target/clr-native-base.jar
+
+time target/clr-native 
+```
+
