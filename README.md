@@ -1,5 +1,11 @@
 Very basic Spring Boot project using a `CommandLineRunner` bean.
 
+`Currently Tracked Versions`
+* Spring Boot 2.4.5 - April 15, 2021
+* Spring Native 0.9.2 (Spring Native Beta) - April 16, 2021
+* OpenJDK version "11.0.10"
+* OpenJDK 64-Bit Server VM GraalVM CE 21.0.0.2 (build 11.0.10+8-jvmci-21.0-b06, mixed mode, sharing)
+
 To build the native application packaged in a lightweight container:
 ```
 # JVM app image
